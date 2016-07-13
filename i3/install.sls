@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "i3/map.jinja" import i3 with context %}
 
-template-pkg:
+i3-pkg:
   pkg.installed:
-    - name: {{ template.pkg }}
+    - name: {{ i3.pkg }}

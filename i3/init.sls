@@ -3,5 +3,3 @@
 
 include:
   - template.install
-  - template.config
-  - template.service
