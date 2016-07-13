@@ -1,14 +1,8 @@
-================
-template-formula
-================
+==========
+i3-formula
+==========
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
-
-.. note::
-
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
+Install i3wm along with some additional packages.
 
 Available states
 ================
@@ -16,7 +10,17 @@ Available states
 .. contents::
     :local:
 
-``template``
-------------
+``i3``
+------
 
-Installs the template package, and starts the associated template service.
+Installs the i3 package.
+
+``i3.gaps``
+-----------
+
+Compiles and installs the i3 gaps branch package.
+
+``i3.blocks``
+-------------
+
+Compiles and installs the i3-blocks package.
