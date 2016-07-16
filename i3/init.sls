@@ -2,4 +2,4 @@
 # vim: ft=sls
 
 include:
-  - template.install
+  - i3.install
