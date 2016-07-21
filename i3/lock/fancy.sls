@@ -42,12 +42,36 @@ i3lock-fancy:
     - target: /tmp/src/i3lock-fancy
     - require:
       - file: /tmp/src/i3lock-fancy
-  cmd.run:
-    - name: make && make install
+
+lock-bin:
+  file.copy:
+    - name: /usr/local/bin/lock
+    - source: /tmp/src/i3lock-fancy/lock
     - user: root
     - group: root
-    - cwd: /tmp/src/i3lock-fancy
+    - mode: 0775
     - require:
       - pkg: i3-pkg
       - git: i3lock-fancy
 
+lock-image:
+  file.copy:
+    - name: /usr/local/bin/lock.png
+    - source: /tmp/src/i3lock-fancy/lock.png
+    - user: root
+    - group: root
+    - mode: 0774
+    - require:
+      - pkg: i3-pkg
+      - git: i3lock-fancy
+
+lockdark-image:
+  file.copy:
+    - name: /usr/local/bin/lockdark.png
+    - source: /tmp/src/i3lock-fancy/lockdark.png
+    - user: root
+    - group: root
+    - mode: 0774
+    - require:
+      - pkg: i3-pkg
+      - git: i3lock-fancy
