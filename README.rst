@@ -24,3 +24,18 @@ Compiles and installs the i3 gaps branch package.
 -------------
 
 Compiles and installs the i3-blocks package.
+
+``i3.lock.blur``
+----------------
+
+Compiles and installs the i3lock-blur package.
+
+``i3.lock.fancy``
+-----------------
+
+Compiles and installs the i3lock-fancy package.
+
+``i3.dunst.absent``
+-------------------
+
+Disable dunst from showing notifications. On Ubuntu, this makes notify-osd (the default) handle the notifications.
