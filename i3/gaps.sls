@@ -4,6 +4,8 @@ include:
 i3-gaps-prerequisites:
   pkg.installed:
     - pkgs:
+      - python-dev
+      - build-essential
       - libxcb1-dev
       - libxcb-keysyms1-dev
       - libpango1.0-dev
